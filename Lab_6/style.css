@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    font-size: 120%;
+}
+
+.link > a {
+    text-decoration: none;
+}
+
+.nav > :nth-child(1) a {
+    color: lightcoral;
+}
+
+.nav > :nth-child(1) a:visited {
+    color: greenyellow;
+}
+
+.nav > :nth-child(2) a {
+    color: plum;
+}
+
+.nav > :nth-child(2) a:visited {
+    color: yellowgreen;
+}
+
+.nav> :nth-child(3) a {
+    color: hotpink;
+}
+
+.nav > :nth-child(3) a:visited {
+    color: limegreen;
+}
+
+.nav > :nth-child(4) a {
+    color: pink;
+}
+
+.nav > :nth-child(4) a:visited {
+    color: green;
+}
+
+
+.nav {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*margin: 0 50px;*/
+    font-size: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .link {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .nav {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .link {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+}

@@ -1,0 +1,58 @@
+h1 {
+    align-items: center;
+    font-size: 22px;
+}
+
+nav {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+}
+
+th {
+    align-items: center;
+    background-color: #ACC8E5;
+    color: #112A46;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+table, th, td {
+    border: 2px solid;
+}
+
+table {
+    border-spacing: 4px;
+}
+
+td:last-child {
+    text-align: end;
+}
+
+@media (min-width: 993px) {
+    th {
+        font-size: 130%;
+    }
+    td {
+        font-size: 120%;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    th {
+        font-size: 120%;
+    }
+    td {
+        font-size: 110%;
+    }
+}
+@media (max-width: 768px) {
+    th {
+        font-size: 110%;
+    }
+}
